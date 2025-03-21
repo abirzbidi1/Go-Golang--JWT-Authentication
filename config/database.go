@@ -12,7 +12,7 @@ var DB *sql.DB
 
 func ConnectDatabase() {
 	var err error
-	dsn := "root:password@tcp(127.0.0.1:3306)/go_jwt_api"
+	dsn := "root:root@tcp(127.0.0.1:3306)/go_jwt_api"
 	DB, err = sql.Open("mysql", dsn)
 
 	if err != nil {
